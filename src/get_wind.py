@@ -9,4 +9,5 @@ url = "https://national-grid-admin.ckan.io/api/3/action/datastore_search"
 params = {"resource_id": "db6c038f-98af-4570-ab60-24d71ebd0ae5"}
 response = requests.get(url, params)
 content = response.json()
-embedded_wind = content["result"]["records"][0]["EMBEDDED_WIND_FORECAST"]
+print(content["result"]["records"][0])
+print(content["result"]["records"][1])
