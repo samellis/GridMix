@@ -23,6 +23,12 @@ response = requests.get(pv_url)
 content = response.json()
 solar = content["data"][0][2]
 
+# Get onshore wind
+url = "https://national-grid-admin.ckan.io/api/3/action/datastore_search"
+params = {"resource_id": "db6c038f-98af-4570-ab60-24d71ebd0ae5"}
+response = requests.get(url, params)
+content = response.json()
+embedded_wind = content["result"]["records"][0]["EMBEDDED_WIND_FORECAST"]
 
 current_generation = (
     "https://downloads.elexonportal.co.uk/fuel/download/latest?key=4le1ovvduygagr7"
@@ -58,13 +64,13 @@ hydro = ["NPSHYD"]
 pumped = ["PS"]
 
 df = pd.DataFrame(data=[consumption], columns=fuels)
-total1 = df.sum(axis=1)[0]
 
 df["Imports"] = df[imports].sum(axis=1)
 df["Gas"] = df[gas].sum(axis=1)
 df["Hydro"] = df[hydro].sum(axis=1)
 df["Pumped Storage"] = df[pumped].sum(axis=1)
 df["Solar"] = solar
+df["WIND"] = df["WIND"] + embedded_wind
 drop_columns = imports + gas + hydro + pumped
 df.drop(columns=drop_columns, inplace=True)
 
@@ -72,7 +78,7 @@ total2 = df.sum(axis=1)[0]
 
 
 df_proportion = pd.DataFrame(
-    data=[[round(100 * df[col].sum() / total1, 2) for col in df.columns]],
+    data=[[round(100 * df[col].sum() / total2, 2) for col in df.columns]],
     columns=df.columns,
 )
 
@@ -89,3 +95,4 @@ print(f"Carbon intensity is {carbon_intensity} gCO2/kWh ({carbon_intensity_index
 # offshore wind turbines are connected to transmission network so power gen is measured directly
 
 # missing wind: 18766-14083 = 4683 at 15:08
+# Get this from embedded-forescast
