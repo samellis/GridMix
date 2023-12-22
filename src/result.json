@@ -1,0 +1,147 @@
+{
+  "license_title": "National Grid ESO Open Data Licence",
+  "maintainer": "",
+  "relationships_as_object": [],
+  "private": "False",
+  "maintainer_email": "",
+  "num_tags": 7,
+  "id": "91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8",
+  "metadata_created": "2019-11-07T21:24:49.135237",
+  "owner_org": "b4167cc5-1a14-4aa3-8fa2-9901fa66b06c",
+  "metadata_modified": "2023-12-22T14:17:57.540008",
+  "author": "National Grid Electricity System Operator",
+  "author_email": "",
+  "state": "active",
+  "version": "",
+  "license_id": "ESO",
+  "type": "dataset",
+  "resources": [
+    {
+      "cache_last_updated": "None",
+      "cache_url": "None",
+      "mimetype_inner": "None",
+      "hash": "",
+      "description": "We publish embedded wind and solar forecast up to 14 days ahead at a daily resolution. ",
+      "metadata_modified": "2023-12-22T14:17:40.539362",
+      "format": "CSV",
+      "url": "https://api.nationalgrideso.com/dataset/91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8/resource/db6c038f-98af-4570-ab60-24d71ebd0ae5/download/embedded-forecast.csv",
+      "created": "2019-11-07T21:25:27.215305",
+      "state": "active",
+      "package_id": "91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8",
+      "last_modified": "2023-12-22T14:17:42.026706",
+      "mimetype": "text/csv",
+      "url_type": "upload",
+      "position": 0,
+      "revision_id": "22f051b6-0b13-499d-aec3-29105dbfd65a",
+      "size": "None",
+      "datastore_active": "True",
+      "id": "db6c038f-98af-4570-ab60-24d71ebd0ae5",
+      "resource_type": "None",
+      "name": "Embedded Solar and Wind Forecast"
+    },
+    {
+      "cache_last_updated": "None",
+      "cache_url": "None",
+      "mimetype_inner": "None",
+      "hash": "",
+      "description": "This document contains the definition for embedded. ",
+      "metadata_modified": "2023-02-09T03:24:31.063398",
+      "format": "DOC",
+      "url": "https://api.nationalgrideso.com/dataset/91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8/resource/3808c680-b5c0-4eab-aac4-7abb6345e65b/download/embedded.docx",
+      "created": "2019-12-13T14:19:43.548887",
+      "state": "active",
+      "package_id": "91c0c70e-0ef5-4116-b6fa-7ad084b5e0e8",
+      "last_modified": "2019-12-13T14:19:43.483624",
+      "mimetype": "None",
+      "url_type": "upload",
+      "position": 1,
+      "revision_id": "b0cedca6-5976-4224-99a1-de40866b2ff9",
+      "size": "None",
+      "datastore_active": "False",
+      "id": "3808c680-b5c0-4eab-aac4-7abb6345e65b",
+      "resource_type": "None",
+      "name": "Embedded Definition"
+    }
+  ],
+  "num_resources": 2,
+  "tags": [
+    {
+      "vocabulary_id": "None",
+      "state": "active",
+      "display_name": "Embedded",
+      "id": "a913290b-d1aa-4b3e-af4d-f27dd3ee2417",
+      "name": "Embedded"
+    },
+    {
+      "vocabulary_id": "None",
+      "state": "active",
+      "display_name": "Forecast",
+      "id": "a80fd9ab-653a-4218-bf7b-aa78ebd0c6ac",
+      "name": "Forecast"
+    },
+    {
+      "vocabulary_id": "None",
+      "state": "active",
+      "display_name": "Generation",
+      "id": "87d6fc4f-dce1-4cc2-8858-b9e839301cac",
+      "name": "Generation"
+    },
+    {
+      "vocabulary_id": "None",
+      "state": "active",
+      "display_name": "Powerbi",
+      "id": "0d6a5ef4-e68b-40cd-a4c0-1942a65691ec",
+      "name": "Powerbi"
+    },
+    {
+      "vocabulary_id": "None",
+      "state": "active",
+      "display_name": "Solar",
+      "id": "0fbc0fdc-b88f-4c6a-a585-09b3565c648e",
+      "name": "Solar"
+    },
+    {
+      "vocabulary_id": "None",
+      "state": "active",
+      "display_name": "Subscribable",
+      "id": "fb80a4a5-bda6-4679-9c06-4decec4a0917",
+      "name": "Subscribable"
+    },
+    {
+      "vocabulary_id": "None",
+      "state": "active",
+      "display_name": "Wind",
+      "id": "a3db9c7a-931f-4e5a-a39a-8bed98e50072",
+      "name": "Wind"
+    }
+  ],
+  "groups": [],
+  "creator_user_id": "91aeb31f-299c-46dc-b289-966044bbfdcd",
+  "relationships_as_subject": [],
+  "name": "embedded-wind-and-solar-forecasts",
+  "isopen": "False",
+  "url": "National Grid Electricity System Operator",
+  "notes": "Electricity System Operator (ESO) publishes at a half-hourly resolution the embedded (refer to embedded document for definition) wind and solar forecast from within day up to 14 days ahead. This forecast gets updated to on a hourly basis. <br/><br/>",
+  "title": "Embedded Wind and Solar Forecasts",
+  "extras": [
+    {
+      "value": "Live",
+      "key": "Status"
+    }
+  ],
+  "license_url": "https://www.nationalgrideso.com/data-portal/ngeso-open-licence",
+  "organization": {
+    "description": "Forecast volumes and cost for reserve margin, wind generation and generation by fuel type.",
+    "title": "Generation",
+    "created": "2019-10-31T14:05:28.005545",
+    "approval_status": "approved",
+    "is_organization": "True",
+    "state": "active",
+    "image_url": "2023-05-15-121344.737084Generation.svg",
+    "revision_id": "ac1260ac-c0e7-4bc4-8f46-739824e1b007",
+    "type": "organization",
+    "id": "b4167cc5-1a14-4aa3-8fa2-9901fa66b06c",
+    "name": "generation"
+  },
+  "revision_id": "dc28bd6e-7bcd-4bd2-ae51-2d4e812cc0c6"
+}
