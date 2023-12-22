@@ -4,10 +4,6 @@ import pandas as pd
 from config import bmrs_api_key
 import xml.etree.ElementTree as ET
 
-# eso_base_url = "https://api.nationalgrideso.com/api/3/action/"
-
-# https://www.energydashboard.co.uk/data
-
 # Get carbon intensity
 # https://carbonintensity.org.uk/
 # https://carbon-intensity.github.io/api-definitions/#get-intensity
@@ -90,9 +86,3 @@ print(f"Live Fuel Mix {updated_at}:")
 print(df_t)
 print(f"Total generation is {round(total2/1000,2)} GW")
 print(f"Carbon intensity is {carbon_intensity} gCO2/kWh ({carbon_intensity_index})")
-
-# from grid.iamkate: Onshore wind turbines in England and Wales (and some in Scotland) are connected to the local distribution network rather than the national transmission network, so their reported power generation is an estimate from National Grid ESO, based on weather conditions and observed transmission network demand.
-# offshore wind turbines are connected to transmission network so power gen is measured directly
-
-# missing wind: 18766-14083 = 4683 at 15:08
-# Get this from embedded-forescast
